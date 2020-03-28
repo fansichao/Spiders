@@ -2,6 +2,7 @@
 
 环境说明
 - `Python3.6`
+- `Centos7.5`
 - `Scrapy框架` & `简单py爬虫`
 
 ## Project
@@ -24,6 +25,13 @@ scrapy startproject baidu
 ```
 
 ## 百度网盘网站资源说明
+
+
+通用参数说明:
+
+- mode 保存模式 append/override 
+- search_text 搜索内容
+- page 搜索页数
 
 ### 盘搜搜
 
@@ -51,6 +59,8 @@ scrapy crawl pansoso03
 
 ```python
 # 项目命令
+scrapy crawl dashengpan01 -a mode=override -a search_text=excel -a page=1
+
 scrapy crawl pansoso01 -a search_text=excel
 scrapy crawl pansoso02
 scrapy crawl pansoso03
@@ -66,7 +76,7 @@ scrapy crawl pansoso03
 
 ```python
 # 项目命令
-scrapy crawl sobaidupan01 -a search_text=excel  -a num=1000
+scrapy crawl sobaidupan01 -a search_text=excel  -a page=1000
 scrapy crawl sobaidupan02
 ```
 

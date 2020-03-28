@@ -28,27 +28,27 @@ class DashengpanSpider1(scrapy.Spider):
     name = "dashengpan01"
     allowed_domains = ["www.dashengpan.com"]
 
-    def __init__(self, search_text='excel', num=1, mode='append', *args, **kwargs):
+    def __init__(self, search_text='excel', page=1, mode='append', *args, **kwargs):
         u""" 指定爬虫参数
         exp:
             scrapy crawl myspider -a http_user=myuser -a http_pass=mypassword -a user_agent=mybot
 
         :param search_text: 搜索内容
-        :param num: 查询页数
+        :param page: 查询页数
         :param mode: override / append 覆盖 or 追加
 
         """
-        num = int(num)
+        page = int(page)
         self.mode = mode
         self.base_url = "https://www.dashengpan.com"
 
-        super(SobaidupanSpider1, self).__init__(*args, **kwargs)
-        print('>>>>>>>> @Spider_name: %s @search_text: %s @num: %s'%(self.name, search_text, num))
+        super(DashengpanSpider1, self).__init__(*args, **kwargs)
+        print('>>>>>>>> @Spider_name: %s @search_text: %s @page: %s'%(self.name, search_text, page))
 
         start_url = 'https://www.dashengpan.com/search?keyword=%s'%(search_text)
 
         self.start_urls = []
-        for i in range(1,num+1):
+        for i in range(1,page+1):
             self.start_urls.append(start_url+'&page=%s'%i)
 
         self._prase_prepare()
@@ -88,7 +88,7 @@ class DashengpanSpider2(scrapy.Spider):
     allowed_domains = ["www.dashengpan.com"]
 
     def __init__(self, mode='append', *args, **kwargs):
-        super(SobaidupanSpider2, self).__init__(*args, **kwargs)
+        super(DashengpanSpider2, self).__init__(*args, **kwargs)
 
         self.mode = mode
         self.level2_file = settings.get('LEVEL2_FILE')
@@ -100,15 +100,23 @@ class DashengpanSpider2(scrapy.Spider):
     def parse(self, response):
         u"""
 
+        说明:
+            1. 大圣盘 自带链接校验机制 
+                HTML中含 该链接有效，可以访问 ,说明链接有效 
+                TODO 由于存在校验延后的问题, 此处未使用
+
         """
         level3_urls = []
-        print(dir(response))
-        if response.status == 200 and '该链接有效，可以访问' in response.text():
+        print('>>>>>>>>'*20)
+        if response.status == 200:
             selector = scrapy.Selector(response)
-            infos = selector.xpath('//div[@class="meta-item copy-item"]')
+            infos = selector.xpath('//div[@class="resource-meta"]')
+            print(infos)
+            print(dir(infos))
 
             for info in infos:
-                hrefs = info.xpath('a/@href').extract()
+                hrefs = info.xpath('@span').extract()
+                print(hrefs)
                 hrefs = [i for i in hrefs if '.html' not in i]
                 href = hrefs[0]
                 if '404.html' not in href:
@@ -116,8 +124,6 @@ class DashengpanSpider2(scrapy.Spider):
 
             write_file(self.level3_file, level3_urls, mode='append')
             print("写入文件[%s]成功" % self.level3_file)
-        
-
 
 if __name__ == '__main__':
     pass

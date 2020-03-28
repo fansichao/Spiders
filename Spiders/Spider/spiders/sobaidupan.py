@@ -28,25 +28,25 @@ class SobaidupanSpider1(scrapy.Spider):
     name = "sobaidupan01"
     allowed_domains = ["www.sobaidupan.com"]
 
-    def __init__(self, search_text='excel', num=1, mode='append', *args, **kwargs):
+    def __init__(self, search_text='excel', page=1, mode='append', *args, **kwargs):
         u""" 指定爬虫参数
         exp:
             scrapy crawl myspider -a http_user=myuser -a http_pass=mypassword -a user_agent=mybot
 
         :param search_text: 搜索内容
-        :param num: 查询页数
+        :param page: 查询页数
         :param mode: override / append 覆盖 or 追加
 
         """
-        num = int(num)
+        page = int(page)
         self.mode = mode
 
         super(SobaidupanSpider1, self).__init__(*args, **kwargs)
-        print('>>>>>>>> @Spider_name: %s @search_text: %s @num: %s'%(self.name, search_text, num))
+        print('>>>>>>>> @Spider_name: %s @search_text: %s @page: %s'%(self.name, search_text, page))
 
         start_url = 'https://www.sobaidupan.com/search.asp?wd=%s'%(search_text)
         self.start_urls = []
-        for i in range(1,num+1):
+        for i in range(1, page+1):
             self.start_urls.append(start_url+'&page=%s'%i)
 
         self._prase_prepare()

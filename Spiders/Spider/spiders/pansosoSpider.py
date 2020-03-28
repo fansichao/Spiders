@@ -27,22 +27,22 @@ class PansosoSpider1(scrapy.Spider):
     name = "pansoso01"
     allowed_domains = ["www.pansoso.com"]
 
-    def __init__(self, search_text='excel', num=1, *args, **kwargs):
+    def __init__(self, search_text='excel', page=1, *args, **kwargs):
         u""" 指定爬虫参数
         exp:
             scrapy crawl myspider -a http_user=myuser -a http_pass=mypassword -a user_agent=mybot
 
         :param search_text: 搜索内容
-        :param num: 查询页数
+        :param page: 查询页数
 
         """
         super(PansosoSpider1, self).__init__(*args, **kwargs)
-        print('>>>>>>>> @Spider_name: %s @search_text: %s @num: %s'%(self.name, search_text, num))
+        print('>>>>>>>> @Spider_name: %s @search_text: %s @page: %s'%(self.name, search_text, page))
 
         start_url = 'http://www.pansoso.com/zh/%s'%search_text
         print('start_url: %s'%start_url)
         self.start_urls = []
-        for i in range(1,num+1):
+        for i in range(1,page+1):
             self.start_urls.append(start_url+'_%s'%i)
 
     def parse(self, response):
