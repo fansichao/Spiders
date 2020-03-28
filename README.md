@@ -1,7 +1,8 @@
 # Spider
 
 环境说明
-- Python3.6
+- `Python3.6`
+- `Scrapy框架` & `简单py爬虫`
 
 ## Project
 
