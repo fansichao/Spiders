@@ -29,9 +29,16 @@ def write_file(file_name, data, mode='append', isprint=False):
         # 创建空文件
         return os.mknod(file_name)  
 
+    if not data:
+        print("无数据写入文件[%s]" % file_name)
+        return 
+
     for row in data:
         cmd = """ echo "%s" >> "%s" """ %(row, file_name)
         os.system(cmd)
+
+    if isprint:
+        print("写入文件[%s]成功" % file_name)
 
     return
     with open(file_name, 'wb') as f:
@@ -44,8 +51,6 @@ def write_file(file_name, data, mode='append', isprint=False):
             _row = row + '\n'
             _row = bytes(_row, encoding='utf-8')
             f.write(_row)
-    if isprint:
-        print("写入文件[%s]成功" % file_name)
         
 
 

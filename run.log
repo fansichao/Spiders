@@ -1,0 +1,1489 @@
+2020-04-03  11:03:54 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:03:55 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:03:55 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:03:56 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:03:56 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:03:56 Fri  root INFO baiduyun_tools.py >>>>>>>>>>>>>>>>>>>   
+2020-04-03  11:06:52 Fri  root INFO baiduyun_tools.py None 
+2020-04-03  11:06:52 Fri  root WARNING baiduyun_tools.py 采用 代码预设值! 
+2020-04-03  11:06:52 Fri  root INFO baiduyun_tools.py >>>> 读取文件[success.txt] 
+2020-04-03  11:06:52 Fri  root INFO baiduyun_tools.py >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt] 
+2020-04-03  11:06:52 Fri  root INFO baiduyun_tools.py >>>>>> URL Total Count [1] 
+2020-04-03  11:06:52 Fri  root INFO baiduyun_tools.py >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'} 
+2020-04-03  11:06:53 Fri  root INFO baiduyun_tools.py Error HTML解析失败 或 链接路径错误！ 
+2020-04-03  11:06:53 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:06:53 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:06:53 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py {'data': {'timestamp': 1585883214, 'action': 'web_home'}} 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 118 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:54 Fri  root INFO baiduyun_tools.py {'errno': 0, 'request_id': 2167673943807080853, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='} 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 
+2020-04-03  11:06:54 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:06:54 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:55 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 310 
+2020-04-03  11:06:55 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:55 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:55 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 
+2020-04-03  11:06:55 Fri  root DEBUG baiduyun_tools.py {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}} 
+2020-04-03  11:06:55 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:55 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 120 
+2020-04-03  11:06:55 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:55 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:55 Fri  root INFO baiduyun_tools.py {'errno': 0, 'err_msg': '', 'request_id': 9085203150732181111, 'randsk': 'XNcf4y48cI%2BCK7hgwI8vaJR%2FNDGlHOCy'} 
+2020-04-03  11:06:55 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:06:55 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:06:55 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:06:55 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1 
+2020-04-03  11:06:56 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:06:56 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:06:56 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:06:56 Fri  root INFO baiduyun_tools.py 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 15858832165);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+ 
+2020-04-03  11:06:56 Fri  root INFO baiduyun_tools.py Error HTML解析失败 或 链接路径错误！ 
+2020-04-03  11:06:56 Fri  root INFO baiduyun_tools.py Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 503, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+ 
+2020-04-03  11:08:21 Fri  root WARNING baiduyun_tools.py 采用 代码预设值! 
+2020-04-03  11:08:21 Fri  root INFO baiduyun_tools.py >>>> 读取文件[success.txt] 
+2020-04-03  11:08:21 Fri  root INFO baiduyun_tools.py >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt] 
+2020-04-03  11:08:21 Fri  root INFO baiduyun_tools.py >>>>>> URL Total Count [1] 
+2020-04-03  11:08:21 Fri  root INFO baiduyun_tools.py >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'} 
+2020-04-03  11:08:21 Fri  root INFO baiduyun_tools.py Error HTML解析失败 或 链接路径错误！ 
+2020-04-03  11:08:21 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:08:21 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:08:21 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:22 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1 
+2020-04-03  11:08:22 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:08:22 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:22 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:22 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:08:22 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:08:22 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py {'data': {'timestamp': 1585883303, 'action': 'web_home'}} 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 115 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py {'errno': 0, 'request_id': 2167697697734648044, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='} 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 309 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:23 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 
+2020-04-03  11:08:23 Fri  root DEBUG baiduyun_tools.py {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}} 
+2020-04-03  11:08:23 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:24 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 66 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py {'errno': -62, 'request_id': 9085231114462918744} 
+2020-04-03  11:08:24 Fri  root DEBUG baiduyun_tools.py https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA 
+2020-04-03  11:08:24 Fri  root DEBUG baiduyun_tools.py {} 
+2020-04-03  11:08:24 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py Starting new HTTPS connection (1): pan.baidu.com:443 
+2020-04-03  11:08:24 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1 
+2020-04-03  11:08:24 Fri  requests.packages.urllib3.connectionpool DEBUG /home/scfan/env36/lib/python3.6/site-packages/urllib3/connectionpool.py https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py <Response [200]> 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py 200 
+2020-04-03  11:08:24 Fri  root INFO baiduyun_tools.py 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 1585883304775);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+ 
+2020-04-03  11:08:25 Fri  root INFO baiduyun_tools.py Error HTML解析失败 或 链接路径错误！ 
+2020-04-03  11:08:25 Fri  root INFO baiduyun_tools.py Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 503, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+ 
+[2020-04-03  11:09:16 Fri ] root: [baiduyun_tools.py-564] WARNING: 采用 代码预设值!
+[2020-04-03  11:09:16 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[success.txt]
+[2020-04-03  11:09:16 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt]
+[2020-04-03  11:09:16 Fri ] root: [baiduyun_tools.py-273] INFO   : >>>>>> URL Total Count [1]
+[2020-04-03  11:09:16 Fri ] root: [baiduyun_tools.py-276] INFO   : >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'}
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-463] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:17 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:17 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:09:17 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:17 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:17 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'timestamp': 1585883358, 'action': 'web_home'}}
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 118
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'request_id': 2167712506268655511, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='}
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 309
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0
+[2020-04-03  11:09:18 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}}
+[2020-04-03  11:09:18 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:19 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 66
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': -62, 'request_id': 9085241686278371127}
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:19 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:19 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:09:19 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:19 Fri ] root: [baiduyun_tools.py-338] INFO   : 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 1585883359615);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+
+[2020-04-03  11:09:20 Fri ] root: [baiduyun_tools.py-463] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:09:20 Fri ] root: [baiduyun_tools.py-296] INFO   : Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 503, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+
+[2020-04-03  11:09:49 Fri ] root: [baiduyun_tools.py-564] WARNING: 采用 代码预设值!
+[2020-04-03  11:09:49 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[success.txt]
+[2020-04-03  11:09:49 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt]
+[2020-04-03  11:09:49 Fri ] root: [baiduyun_tools.py-273] INFO   : >>>>>> URL Total Count [1]
+[2020-04-03  11:09:49 Fri ] root: [baiduyun_tools.py-276] INFO   : >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'}
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-463] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:50 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:50 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:09:50 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:50 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:50 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'timestamp': 1585883391, 'action': 'web_home'}}
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 118
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'request_id': 2167721375029484718, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='}
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 310
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0
+[2020-04-03  11:09:51 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}}
+[2020-04-03  11:09:51 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:52 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 66
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': -62, 'request_id': 9085250554767568960}
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:09:52 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:09:52 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:09:52 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:09:52 Fri ] root: [baiduyun_tools.py-338] INFO   : 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 1585883392685);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+
+[2020-04-03  11:09:53 Fri ] root: [baiduyun_tools.py-463] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:09:53 Fri ] root: [baiduyun_tools.py-296] INFO   : Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 503, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+
+[2020-04-03  11:09:53 Fri ] root: [baiduyun_tools.py-298] INFO   : 'shareid'
+[2020-04-03  11:09:53 Fri ] root: [baiduyun_tools.py-300] INFO   : 总计信息: 
+{'file_count': 1, 'valid_count': 1, 'success_count': 0, 'failed_count': 1}
+[2020-04-03  11:11:42 Fri ] root: [baiduyun_tools.py-565] WARNING: 采用 代码预设值!
+[2020-04-03  11:11:42 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[success.txt]
+[2020-04-03  11:11:42 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt]
+[2020-04-03  11:11:42 Fri ] root: [baiduyun_tools.py-273] INFO   : >>>>>> URL Total Count [1]
+[2020-04-03  11:11:42 Fri ] root: [baiduyun_tools.py-276] INFO   : >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'}
+[2020-04-03  11:11:43 Fri ] root: [baiduyun_tools.py-464] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:11:43 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:11:43 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:11:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'timestamp': 1585883504, 'action': 'web_home'}}
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 118
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'request_id': 2167751761888283429, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='}
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0
+[2020-04-03  11:11:44 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:11:44 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:45 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 309
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}}
+[2020-04-03  11:11:45 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:45 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 121
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'err_msg': '', 'request_id': 9085280972177101235, 'randsk': 'XNcf4y48cI%2BCK7hgwI8vaJR%2FNDGlHOCy'}
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:11:45 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:11:45 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:11:45 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:11:46 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-339] INFO   : 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 1585883505994);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-464] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-296] INFO   : Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 504, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-298] INFO   : >> 运行失败:
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-299] INFO   : 'shareid'
+[2020-04-03  11:11:46 Fri ] root: [baiduyun_tools.py-301] INFO   : 总计信息: 
+{'file_count': 1, 'valid_count': 1, 'success_count': 0, 'failed_count': 1}
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-567] WARNING: 采用 代码预设值!
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[success.txt]
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-182] INFO   : >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt]
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-273] INFO   : >>>>>> URL Total Count [1]
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-276] INFO   : >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'}
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-466] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:12:40 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:12:41 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:41 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:12:41 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:12:41 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:41 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:41 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:12:41 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:12:41 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'timestamp': 1585883562, 'action': 'web_home'}}
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0 HTTP/1.1" 200 118
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'request_id': 2167767270219859151, 'uinfo': 'A046KjOF12J1vAjINjIGM9EwMCHRY0hWXxsOTBxg2+c='}
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0 HTTP/1.1" 200 309
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0
+[2020-04-03  11:12:42 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {'data': {'pwd': 'y0xy', 'vcode': '', 'vcode_str': ''}}
+[2020-04-03  11:12:42 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "POST /share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0 HTTP/1.1" 200 121
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-94] INFO   : {'errno': 0, 'err_msg': '', 'request_id': 9085296441288582134, 'randsk': 'XNcf4y48cI%2BCK7hgwI8vaJR%2FNDGlHOCy'}
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-72] DEBUG  : https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-73] DEBUG  : {}
+[2020-04-03  11:12:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-959] DEBUG  : Starting new HTTPS connection (1): pan.baidu.com:443
+[2020-04-03  11:12:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /s/1nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 302 1
+[2020-04-03  11:12:43 Fri ] requests.packages.urllib3.connectionpool: [connectionpool.py-437] DEBUG  : https://pan.baidu.com:443 "GET /share/init?surl=nKdwucv-HENIVr9CaG5dRA HTTP/1.1" 200 None
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-89] INFO   : <Response [200]>
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-90] INFO   : 200
+[2020-04-03  11:12:43 Fri ] root: [baiduyun_tools.py-341] INFO   : 
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10,11" />
+<meta name="renderer" content="webkit">
+<script src="/sns/box-static/disk-share/js/share.dp.js?t=1585295931395"></script>
+<link rel="shortcut icon" href="/res/static/images/favicon.ico"/>
+<script src="/sns/box-static/disk-share/js/mod.js?t=1585295931395"></script>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/base.css"/>
+<link rel="stylesheet" type="text/css" href="/box-static/consult/system-core.css"/>
+<script src="/box-static/consult/base.js"></script>
+<script src="/box-static/consult/system-core.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/function.css"/>
+
+
+<meta content="b31ebb7c3759312418b3645de4991aef" name="baidu-tc-verification"/>
+<meta content="max-age=30" http-equiv="Cache-Control"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta content="ç½ç,ç¾åº¦ç½ç,ç¾åº¦äº,ç½ç»Uç,ç½ç»ç¡¬ç,åè´¹ç½ç,ç½çä¸è½½,ç½çèµæº,åæ­¥,äºå­å¨,å¤é¾åäº«,ç¦»çº¿ä¸è½½" name="keywords">
+<meta content="ç¾åº¦ç½çä¸ºæ¨æä¾æä»¶çç½ç»å¤ä»½ãåæ­¥ååäº«æå¡ãç©ºé´å¤§ãéåº¦å¿«ãå®å¨ç¨³åºï¼æ¯ææè²ç½å éï¼æ¯æææºç«¯ãæ³¨åä½¿ç¨ç¾åº¦ç½çå³å¯äº«ååè´¹å­å¨ç©ºé´" name="description"><style type="text/css">
+        html {
+            *overflow-y: hidden!important;
+        }
+        /* layout begin */
+        #layoutApp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 1186px;
+            _width: 100%;
+            _height: 630px;
+            font: 14px 'Microsoft YaHei', 'SimSun';
+        }
+        #layoutHeader {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 41;
+        }
+        #layoutAside {
+            position: absolute;
+            width: 190px;
+            min-height: 350px;
+            top: 65px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #e2e5e6;
+            background: #f2f2f2;
+            z-index: 9;
+        }
+        #layoutMain {
+            position: absolute;
+            top: 65px;
+            left: 191px;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        #doc{
+            background-color: #eef2f6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        /* layout end */
+    </style>
+
+
+<link rel="stylesheet" type="text/css" href="/box-static/consult/default.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/system_5e0b154.css?t=1585295931395"/><link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/pkg/page-ui_430b104.css?t=1585295931395"/></head>
+<body>
+<script> alog('speed.set', 'ht', +new Date); </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/sns/box-static/disk-share/css/cover.css?t=1585295931395"/>
+<div class="docs init-docs" id="doc">
+<div class="phone-banner"></div>
+<div class="acss-header" id="woDKjj">
+<div class="acss_banner"></div>
+<div class="verify-form">
+<form action="" class="clearfix" name="accessForm" onsubmit="return false">
+<div class="CMxQsC">
+<div class="avatar">
+<div class="photo-frame">
+<a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon svip-icon"><em></em></a>
+<span class="radius-3"><img alt="exc*****rpen" onload="if(this.offsetHeight>this.offsetWidth){this.style.height=&quot;44px&quot;;this.style.width=&quot;auto&quot;;}" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg" width="44"></span>
+</div>
+</div>
+<div class="verify-property">
+<div class="verify-user"><strong>exc*****rpen</strong>ç»æ¨å å¯åäº«äºæä»¶</div>
+<div class="author-desc"></div>
+</div>
+<div class="verify-btn">
+<div class="verify-friend">å ä¸ºå¥½å</div>
+</div>
+<div class="cb"></div>
+</div>
+<div class="verify-input ac-close clearfix">
+<dl class="pickpw clearfix">
+<dt>
+è¯·è¾å¥æåç ï¼</dt>
+<dd class="clearfix input-area">
+<input class="QKKaIE LxgeIt" id="rccsDE3r" tabindex="1" type="text">
+<div id="vmaDRdr"></div>
+</dd>
+</dl>
+<dl class="pickcode clearfix">
+<dt>
+éªè¯ç ï¼</dt>
+<dd class="clearfix">
+<input class="LIztsC QKKaIE" id="aqrbl8" tabindex="2" type="text">
+<img alt="éªè¯ç " id="zveq8bO"><a class="change-code" href="javascript:;">æ¢ä¸å¼ </a>
+</dd>
+</dl>
+</div>
+</form>
+<div id="zewOG2r" style="display: block;"></div>
+</div>
+</div>
+<div class="cloud-bg">
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+</div>
+<div class="init-footer">
+<div class="footer" id="footer" style="height: 40px;">
+<div class="footer-txt">
+<div xmlns="http://www.w3.org/1999/xhtml">&copy;2020Baidu<a class="b-lnk-gy" href="//pan.baidu.com/platform/home" target="_blank">ç§»å¨å¼æ¾å¹³å°</a>|<a class="b-lnk-gy" href="/disk/duty/" target="_blank">æå¡åè®®</a>|<a class="b-lnk-gy" href="//yun.baidu.com/disk/privacy" target="_blank">æå©å£°æ</a>|<span class="hp-footer-link"><a class="b-lnk-gy" href="http://yun.baidu.com/disk/version" target="_blank">çæ¬æ´æ°</a>|<a class="b-lnk-gy" href="http://yun.baidu.com/disk/help" target="_blank">å¸®å©ä¸­å¿</a>|<a class="b-lnk-gy" href="http://help.baidu.com/newadd?prod_id=29&category=2&ptype=48" target="_blank">é®é¢åé¦</a>|<a class="b-lnk-gy" href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">çææè¯</a>|<a class="b-lnk-gy" href="//pan.baidu.com/disk/certification" target="_blank">å¸å·è®¤è¯</a></div>
+</div>
+</div></div>
+</div>
+
+
+<script>
+        void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+    </script>
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=ett" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcs.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcs" />
+<img style="position:absolute;top:-10px;left:-10px;width:1px;height:1px;display:none;" src="//pcsdata.baidu.com/rest/2.0/pcs/file?method=plantcookie&type=stoken&source=pcsdata" />
+<script>
+        void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol||a.alogObjectConfig.https?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+<script>
+        /* eslint-disable */
+        if (navigator.userAgent.indexOf('MSIE') < 0 || navigator.userAgent.indexOf('MSIE 11.0') > 0) {
+            alog('speed.set', 'drt', +new Date); 
+        }
+    </script>
+</body><script type="text/javascript">require.resourceMap({"res":{"disk-share:static/js/pcsDownloadUtil.js":{"url":"/sns/box-static/disk-share/js/pcsDownloadUtil.js?t=1585295931395"},"disk-share:static/js/baidu-tongji.js":{"url":"/sns/box-static/disk-share/js/baidu-tongji.js?t=1585295931395"}}});</script><script type="text/javascript" src="/sns/box-static/disk-share/widget/data/yunData_17544c3.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/system_2c295f1.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/index_81fc334.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/widget/verifyCodeDialog/newVerify_aa4d281.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/pkg/page-ui_397f6bb.js?t=1585295931395"></script>
+<script type="text/javascript" src="/sns/box-static/disk-share/js/boot.js?t=1585295931395"></script>
+<script type="text/javascript">!function(){                (function(){
+            var context = require('system-core:context/context.js');
+            var Broker = require('system-core:pluginHub/Broker/Broker.js');
+            var yunData = require('disk-share:widget/data/yunData.js');
+            yunData.setData({"loginstate":0,"username":"exc*****rpen","uk":3610179400,"sampling":false,"bdstoken":null,"is_vip":0,"is_year_vip":0,"show_vip_ad":null,"vip_end_time":null,"is_evip":0,"is_svip":0,"is_auto_svip":0,"photo":"https:\/\/ss0.bdstatic.com\/7Ls0a8Sm1A5BphGlnYG\/sys\/portrait\/item\/netdisk.1.538fbe1b.sMNmjSpk14c14TKdtPWOaw.jpg","errortype":null,"is_master_vip":1,"is_master_svip":1,"visitor_uk":null,"followFlag":null,"add_friend_small_flow":1,"hit_ogc":null,"cfrom_id":null,"LRURPVSDB":"1nKdwucv-HENIVr9CaG5dRA%26%2Fs%2F1nKdwucv-HENIVr9CaG5dRA","urlparam":[],"XDUSS":"null"});
+
+            yunData.setData('SERVERTIME', 1585883563503);
+            context.extend({data: {user: yunData.get()},Broker:Broker});
+        })();
+            }();
+!function(){        require("disk-share:widget/system/errorMsg/errorMsg.js");
+    }();
+!function(){    require("disk-share:widget/pageModule/init/init.js");
+}();
+!function(){         require("disk-share:widget/pageModule/hot-rec/hot-rec.js");
+         var footer = require("disk-share:widget/pageModule/footer/footer.js");
+    }();
+!function(){        require.async("disk-share:static/js/baidu-tongji.js");
+    }();</script></html>
+
+[2020-04-03  11:12:44 Fri ] root: [baiduyun_tools.py-466] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  11:12:44 Fri ] root: [baiduyun_tools.py-298] INFO   : Traceback (most recent call last):
+  File "baiduyun_tools.py", line 291, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 506, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+
+[2020-04-03  11:12:44 Fri ] root: [baiduyun_tools.py-300] INFO   : >> 运行失败:
+[2020-04-03  11:12:44 Fri ] root: [baiduyun_tools.py-301] INFO   : 'shareid'
+[2020-04-03  11:12:44 Fri ] root: [baiduyun_tools.py-303] INFO   : 总计信息: 
+{'file_count': 1, 'valid_count': 1, 'success_count': 0, 'failed_count': 1}
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-574] WARNING: 采用 代码预设值!
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-190] INFO   : >>>> 读取文件[success.txt]
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-190] INFO   : >>>> 读取文件[/data/scrapy_data/baiduyun/tmp.txt]
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-281] INFO   : >>>>>> URL Total Count [1]
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-284] INFO   : >>>> Save Resource :
+{'url': 'https://pan.baidu.com/s/1vCsSiQghS4jUs3YjVkJPaQ', 'code': 'h183', 'type': 'have_code'}
+[2020-04-03  12:01:29 Fri ] root: [baiduyun_tools.py-358] INFO   : 未成功获取 用户参数数据!
+[2020-04-03  12:01:30 Fri ] root: [baiduyun_tools.py-472] INFO   : Error HTML解析失败 或 链接路径错误！
+[2020-04-03  12:01:30 Fri ] root: [baiduyun_tools.py-299] ERROR  : Traceback (most recent call last):
+  File "baiduyun_tools.py", line 294, in save
+    self._save_addziyuan(save_path)
+  File "baiduyun_tools.py", line 512, in _save_addziyuan
+    **post_data)
+KeyError: 'shareid'
+
+[2020-04-03  12:01:30 Fri ] root: [baiduyun_tools.py-301] INFO   : >> 运行失败:
+[2020-04-03  12:01:30 Fri ] root: [baiduyun_tools.py-302] INFO   : 'shareid'
+[2020-04-03  12:01:30 Fri ] root: [baiduyun_tools.py-304] INFO   : 总计信息: 
+{'file_count': 1, 'valid_count': 1, 'success_count': 0, 'failed_count': 1}

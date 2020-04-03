@@ -21,19 +21,20 @@ SPIDER_MODULES = ['Spider.spiders']
 NEWSPIDER_MODULE = 'Spider.spiders'
 
 # Obey robots.txt rules
+ROBOTSTXT_OBEY = True
 ROBOTSTXT_OBEY = False
 
 # 并发请求数
-CONCURRENT_REQUESTS = 4
+CONCURRENT_REQUESTS = 2
 # 单域名访问并发数，并且延迟下次秒数也应用在每个域名
-CONCURRENT_REQUESTS_PER_DOMAIN  = 5
+CONCURRENT_REQUESTS_PER_DOMAIN  = 2
 # 单IP访问并发数，如果有值则忽略：CONCURRENT_REQUESTS_PER_DOMAIN，并且延迟下次秒数也应用在每个IP
-CONCURRENT_REQUESTS_PER_IP = 3
+CONCURRENT_REQUESTS_PER_IP = 1
 # 延迟下载秒数
 DOWNLOAD_DELAY = 3
 
 # 是否支持cookie, cookiejar进行操作cookie
-# COOKIES_ENABLED = True
+COOKIES_ENABLED = False 
 # COOKIES_DEBUG = True
 
 # 爬虫允许的最大深度，可以通过meta查看当前深度；0表示无深度
@@ -53,6 +54,7 @@ LEVEL1_FILE = '/data/scrapy_data/baiduyun/level1.txt'
 LEVEL2_FILE = '/data/scrapy_data/baiduyun/level2.txt'
 LEVEL3_FILE = '/data/scrapy_data/baiduyun/level3.txt'
 LEVEL4_FILE = '/data/scrapy_data/baiduyun/level4.txt'
+RESULT_FILE = '/data/scrapy_data/baiduyun/result.txt'
 # 百度网盘 资源存储
 BAIDU_RESULT_FILE = '/data/scrapy_data/baiduyun/result.txt'
 
@@ -89,9 +91,14 @@ USER_AGENT_LIST=[
 # 代理文件名称
 PROXY_FILE_NAME = "/data/scrapy_data/proxies.txt"
 # 是否使用代理IP
-IS_USE_PROXY = True
 IS_USE_PROXY = False
+IS_USE_PROXY = True
 
+# 是否处理 延迟加载
+IS_USE_DELAY_LOAD_URL = False
+IS_USE_DELAY_LOAD_URL = True
+DELAY_LOAD_URL_TIME_first = 4
+DELAY_LOAD_URL_TIME_second = 3
 
 # >>>>>>>>> 添加文件
 ITEM_PIPELINES = {
@@ -106,10 +113,18 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None,
     'Spider.randomAgentMiddleware.MyUserAgentMiddleware': 400,
     # scfan 代理IP - 参考链接: https://blog.csdn.net/Gooooa/article/details/74452203
-     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware':None,  
-     'Spider.middlewares.ProxyMiddleWare':125,  
-     'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware':None  
+    # Proxy后 含 延迟加载 页面功能
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware':None,  
+    'Spider.middlewares.ProxyMiddleWare':125,  
+    'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware':None,
+    # Crawlera（专用于爬虫的代理组件），正确配置和设置下载中间件后，项目所有的request都是通过crawlera发出。
+    # 'scrapy_crawlera.CrawleraMiddleware': 600
 }
+
+# CRAWLERA_ENABLED = True
+# CRAWLERA_USER = '注册/购买的UserKey'
+# CRAWLERA_PASS = '注册/购买的Password'
+
 
 # >>>>>>>>>>>> Scfan Settings End
 

@@ -5,9 +5,11 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import time
 import random  
 import scrapy  
 from scrapy import signals
+from  scrapy.http import HtmlResponse
 from scrapy.utils.project import get_project_settings
 
 from twisted.internet import defer
@@ -16,6 +18,10 @@ from twisted.internet.error import TimeoutError, DNSLookupError, \
     ConnectionLost, TCPTimedOutError
 from twisted.web.client import ResponseFailed
 from scrapy.core.downloader.handlers.http11 import TunnelError
+from selenium.common.exceptions import TimeoutException
+
+
+settings = get_project_settings()
 
 class SpiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -127,20 +133,42 @@ class ProxyMiddleWare(object):
                       IOError, TunnelError)
  
     def __init__(self):
-        self.settings = get_project_settings()
-
+        pass
 
     def process_request(self,request, spider):  
         '''对request对象加上proxy'''  
         proxy = self.get_random_proxy()  
-        if self.settings.get("IS_USE_PROXY", False):
+        if settings.get("IS_USE_PROXY", False):
+            spider.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 已开启代理服务')
             print("this is request ip:"+proxy)  
             request.meta['proxy'] = proxy   
+
+            # 解决 页面延迟加载问题
+            try:
+                if settings.get("IS_USE_DELAY_LOAD_URL", False):
+                    try:
+                        spider.browser.get(request.url)
+                        time.sleep(settings.get("DELAY_LOAD_URL_TIME_first", 3))
+                        spider.browser.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+                        #执行页面下拉操作的代码
+                    except TimeoutException as e:
+                        print('超时')
+                        spider.browser.execute_script('window.stop()')
+                    time.sleep(settings.get("DELAY_LOAD_URL_TIME_second", 2))
+                    return HtmlResponse(url=spider.browser.current_url, body=spider.browser.page_source,
+                                        encoding="utf-8", request=request)
+            except Exception as err:
+                pass
+        else:
+            spider.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 未开启代理服务')
+    
+
+
 
     def process_response(self, request, response, spider):  
         '''对返回的response处理'''  
         # 如果返回的response状态不是200，重新生成当前request对象  
-        if self.settings.get("IS_USE_PROXY", False):
+        if settings.get("IS_USE_PROXY", False):
             if response.status != 200:  
                 proxy = self.get_random_proxy()  
                 print("this is response ip:"+proxy)  
@@ -152,7 +180,7 @@ class ProxyMiddleWare(object):
     def get_random_proxy(self):  
         '''随机从文件中读取proxy'''  
         while 1:  
-            with open(self.settings.get('PROXY_FILE_NAME'), 'r') as f:  
+            with open(settings.get('PROXY_FILE_NAME'), 'r') as f:  
                 proxies = f.readlines()  
             if proxies:  
                 break  
@@ -165,7 +193,7 @@ class ProxyMiddleWare(object):
         """ 捕获几乎所有的异常 """
         if isinstance(exception, self.ALL_EXCEPTIONS):
             spider.logger.error('Error: Got exception: %s' % (exception))
-            response = scrapy.http.HtmlResponse(url='exception')
+            response = HtmlResponse(url='exception')
 
             # 重新请求
             request.meta['proxy'] = self.get_random_proxy()

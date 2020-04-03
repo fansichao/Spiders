@@ -101,6 +101,8 @@ if __name__ == '__main__':
     a.verify_proxies()  
     print (a.proxies)  
     proxie = a.proxies   
-    with open('/data/scrapy_data/proxies.txt', 'a') as f:  
+    proxie_file_path = '/data/scrapy_data/proxies.txt'
+    with open(proxie_file_path, 'a') as f:  
        for proxy in proxie:  
              f.write(proxy+'\n')  
+    print('>> 共计[%s]代理IP, 写入文件[%s]成功'%(len(proxie), proxie_file_path))
