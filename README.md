@@ -1,18 +1,26 @@
 # Spider
 
-环境说明
+**环境说明:**
 
 - `Python3.6`
 - `Centos7.5`
 - `Scrapy框架` & `简单py爬虫`
 
-TODO
+**已实现功能:**
+
+1. 爬虫 Scrapy 爬取百度网盘搜索引擎数据
+2. 自动将百度网盘资源转存到自己网盘
+   1. 支持无提取码 URL
+   2. 支持有提取码 URL
+
+**待完成项:**
 
 - 优质代理 IP 池
 - 百度网盘自动保存资源 提取码-验证码问题
-- 代码中含部分写死参数(虽可使用, 或未来可能存在问题)
+- 暂不支持保存自己分享的资源
+- 代码优化
 
-## Project
+## 项目
 
 - Baiduyun
   - 查询 网盘搜索引擎 上百度云盘资源
@@ -123,7 +131,13 @@ failed.txt 记录失败的URL
 - [自动将资源添加到百度网盘中](https://github.com/tengzhangchao/BaiDuPan)
 - [Scrapy\_延迟加载](https://zhuanlan.zhihu.com/p/72887277)
 
-免责说明:
+### 求赞赏
+
+如果对您有帮助，还请支持我吧！(皮卡 qiu~~)
+
+![支付宝微信_赞赏图片](https://raw.githubusercontent.com/fansichao/images/master/markdown/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%BE%AE%E4%BF%A1_%E8%B5%9E%E8%B5%8F%E5%9B%BE%E7%89%87.png)
+
+### 免责说明
 
 1. 非商业用途.
 2. 如有侵犯您的合法权益或违法违规，请提供相关有效书面证明与侵权页面链接联系我们进行删除。感谢您的支持
