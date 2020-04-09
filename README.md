@@ -26,7 +26,7 @@
 - file 存放自动转存百度云盘 信息
 - proxies_tools.py 自动生成代理文件
 - Spiders 爬取百度网盘搜索引擎资源
-- scrapy_mockplus_template Scrapy爬虫,爬取MockPlus模板(待优化)
+- scrapy_mockplus_template Scrapy 爬虫,爬取 MockPlus 模板(待优化)
 
 ## 项目
 
@@ -69,6 +69,22 @@ scrapy crawl pansoso02
 scrapy crawl pansoso03
 ```
 
+#### 搜百度盘(已完成)
+
+说明:
+
+- 搜百度盘 网站简单,适合练手
+- 但是资源基本(99%)都是无效资源,无过多反爬虫机制.
+- 不建议使用此网站
+
+```python
+# 项目命令
+scrapy crawl sobaidupan01 -a search_text=excel  -a page=1000
+scrapy crawl sobaidupan02
+```
+
+网站链接: 网盘资源 www.sobaidupan.com
+
 #### 大圣盘((已完成)建议)
 
 说明:
@@ -85,23 +101,8 @@ scrapy crawl pansoso03
 ```python
 # 项目命令
 scrapy crawl dashengpan01 -a mode=append -a search_text=excel -a page=1
+scrapy crawl dashengpan02 -a mode=append # 需要在有UI界面的地方执行
 ```
-
-#### 搜百度盘(已完成)
-
-说明:
-
-- 搜百度盘 网站简单,适合练手
-- 但是资源基本(99%)都是无效资源,无过多反爬虫机制.
-- 不建议使用此网站
-
-```python
-# 项目命令
-scrapy crawl sobaidupan01 -a search_text=excel  -a page=1000
-scrapy crawl sobaidupan02
-```
-
-网站链接: 网盘资源 www.sobaidupan.com
 
 ### 百度云资源自动转存项目
 
