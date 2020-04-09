@@ -1,49 +1,50 @@
 # Spider
 
 环境说明
+
 - `Python3.6`
 - `Centos7.5`
 - `Scrapy框架` & `简单py爬虫`
 
 TODO
 
-- 代理IP
-- 百度网盘 提取码的自动转存问题
-- 大圣盘IP被锁问题
+- 优质代理 IP 池
+- 百度网盘自动保存资源 提取码-验证码问题
+- 代码中含部分写死参数(虽可使用, 或未来可能存在问题)
 
 ## Project
 
-- Baiduyun 
-    - 查询 盘搜搜 上百度云盘资源
-    - 将云盘资源保存到百度网盘中
+- Baiduyun
+  - 查询 网盘搜索引擎 上百度云盘资源
+  - 将云盘资源保存到百度网盘中
 - MockPLus
-    - 自动获取 MockPlus 精美模板
+  - 自动获取 MockPlus 精美模板
 
-## 常用命令
+### 爬虫项目
 
+#### 常用命令
 
 ```python
-# 
 scrapy startproject baidu
 # 传递参数
-# scrapy crawl pansoso1 -a search_text=excel
-# TODO 直接搜索百度API
+scrapy crawl pansoso1 -a search_text=excel
 ```
 
-## 百度网盘网站资源说明
+#### 百度网盘网站资源说明
 
 通用参数说明:
 
-- mode 保存模式 append/override 
+- mode 保存模式 append/override 建议 append
 - search_text 搜索内容
 - page 搜索页数
 
-### 盘搜搜
+TODO override 存在 bug 后面覆盖前面的情况
 
-网站资源一般,链接存在加密,存在访问过多时IP封锁.
+#### 盘搜搜(未完成)
+
+网站资源一般,链接存在加密,存在访问过多时 IP 封锁.
 
 网站链接: 网盘资源 www.pansoso.com
-
 
 ```python
 # 项目命令
@@ -52,16 +53,16 @@ scrapy crawl pansoso02
 scrapy crawl pansoso03
 ```
 
-### 大圣盘(建议)
+#### 大圣盘((已完成)建议)
 
 说明:
 
-- 大多资源有效,且网站存在资源校验机制. 
+- 大多资源有效,且网站存在资源校验机制.
 - 资源分为无提取码和有提取码两种.
 - 资源文件都较大,且命名不规范,或非实际所需文件
 - 反爬虫机制
-    - 延迟加载(提取码 & 提取码是否有效)
-        - 解决方法: 使用selenium(浏览器处理)
+  - 延迟加载(提取码 & 提取码是否有效)
+    - 解决方法: 使用 selenium(浏览器处理)
 
 网站链接: 网盘资源 www.dashengpan.com
 
@@ -70,7 +71,7 @@ scrapy crawl pansoso03
 scrapy crawl dashengpan01 -a mode=append -a search_text=excel -a page=1
 ```
 
-### 搜百度盘
+#### 搜百度盘(已完成)
 
 说明:
 
@@ -86,35 +87,43 @@ scrapy crawl sobaidupan02
 
 网站链接: 网盘资源 www.sobaidupan.com
 
+### 百度云资源自动转存项目
 
-## 附件
+**项目详细说明:**
 
-### 使用样例
+1. 支持功能
+   1. 自动将 文件中 URL 保存到百度网盘中
+   2. 支持有提取码和无提取码格式
+   3. 对资源保存情况有整体说明等
+2. TODO 暂不支持
+   1. 根据用户名称和密码自动登录获取 Cookie
+   2. 部分资源有提取码时仍需要验证码,暂不支持
+3. 其他说明:
+   1. 使用 Linux 测试,Windows 未测试
+   2. 配置目录 `/data/scrapy_data/baiduyun/badidu_result.txt` 存放百度云资料
+   3. `badidu_result.txt` 详见 `file/badidu_result.txt`
 
-```python
-# 爬取百度网盘资源
-1. scrapy crawl dashengpan01 -a mode=append -a search_text="app inventor" -a page=5 
-2. scrapy crawl dashengpan02 # 必须在图形化界面打开
+**使用样例:**
 
+```bash
 # 将网盘资源保存到百度网盘
 python baiduyun_tools.py -filename xxxxx -cookie xxxxx -path xxxx
 
 # 输出说明
 success.txt 记录成功运行的 URL, 下次运行时不会在运行此中URL
-
+failed.txt 记录失败的URL
 ```
+
+![参考图片 Spider_baiduyunpan_01](https://raw.githubusercontent.com/fansichao/images/master/markdown/Spider_baiduyunpan_01.png)
+
+## 附件
 
 ### 参考链接
 
 - [自动将资源添加到百度网盘中](https://github.com/tengzhangchao/BaiDuPan)
-- [Scrapy_延迟加载](https://zhuanlan.zhihu.com/p/72887277)
-
+- [Scrapy\_延迟加载](https://zhuanlan.zhihu.com/p/72887277)
 
 免责说明:
 
 1. 非商业用途.
 2. 如有侵犯您的合法权益或违法违规，请提供相关有效书面证明与侵权页面链接联系我们进行删除。感谢您的支持
-
-
-
-

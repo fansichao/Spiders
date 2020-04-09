@@ -8,7 +8,32 @@ u"""
 - python2.7+ or python3.6+
 
 
-上次测试日期: 2020-03-15
+上次测试日期: 2020-04-09
+
+
+TODO 待实现功能
+1. 部分参数被写死在代码中，虽然可以使用，后续情况未知
+2. 百度云盘 提取码-验证码 功能
+
+
+
+# Cookie样例 由于Cookie涉及账户信息，下面Cookie已修改，仅供参考
+
+BAIDU_COOKIE="PANWEB=1; BAIDUID=923A5BDE1qwe647asd4E92C334192350D587E4:FG=1;
+BIDUPSID=923A5BDE16474E92C334192qwe350D587E4;
+PSTM=15813qwe13169;
+BDCLND=htZZ6SMApcXvOZMqwe96rZqQcZxbosli4xpXyMhKgpx%2Fj0%3D;
+MCITY=-179%3A; BDORZ=B490B5EqweBF6F3CD402E515D22BCDA1598;
+recommendTime=guanjia2020-03-1qwe3%2016%3A15%3A00;
+Hm_lvt_7a3960b6f067eb0085b7f96ff5qwee660b0=1584096155,1584101138,1584265339,1584267498;
+delPer=0; PSINO=3; H_PS_PSSID=30975_14qwe69_21095_30794_30903_30824_31086;
+Hm_lpvt_7a3960b6f067eqweb0085b7f96ff5e660b0=1584274302;
+cflag=13%3A3;
+BDUSS=DhldzR0TmRqwexRkp6ei1jeGc4LVYxOU94emNURDh5UWkzN1Z6RWhtVmdrbTZxSlZlSUFBQUFBJCQAAAAAAAAAAAEAAAAF
+-~g5x6ezvunkwuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALobbl66G25eT;
+SCRC=d3f27690dd6c0a346qwed174483029754bb; STOKEN=40d692aa6b3ef7fa0qwe41cf0404c1466dd5cf45858323f48384296dd7f7c0736de;
+PANPSC=2847981154796289755%3AbAgLjDNYqweOsBMAwFlu9uBTpgn1M6s6PFhX0h%2FHfAcgs%2BFZR9eKYGfrKqwe1M2R80bvszK9sKmG0jScwI2OVc1JRpeLM%2Fc5VTqAtBRNjpS2SKb1qcCNpWJnWVTkPbIrl
+%2FMm6bcseJ9c69iCeQvaoB4mrv5XUvHO53SMyxqweMRmYrlFHgmqF9Kes%2FZQ%2FFe4PuTzNr1rr"
 
 
 """
@@ -53,54 +78,6 @@ else:
     from urllib.request import Request as Request
     from urllib.request import urlopen as urlopen
     from urllib.request import unquote as unquote
-
-
-def http_request(url, msg="", method="GET", headers=None, is_logging=False, **kwargs):
-    u""" 执行需要的 HTTP 请求命令
-
-    功能:
-        整合了所有 HTTP 参数请求
-
-    :param str url: 链接
-    :param str msg: 信息
-    :param str method: 请求方式
-    :param bool is_logging: 是否打印详细信息
-
-    get - params=data
-    post - data=data headers=headers
-
-    # GET params 不支持循环嵌套的数据. 例如{'properties': {'data_mark': '20191119064014'}} 需要自行json
-        data = {
-            # TIPS: 嵌套的字典, 里面必须 json 化
-            "properties": json.dumps(properties),
-        }
-
-    """
-    logging.debug(url)
-    logging.debug(kwargs)
-    method_lis = ['GET', 'POST', 'HEAD', 'OPTIONS', 'PUT', 'DELETE', 'TRACE', 'CONNECT']
-    method = method if method.upper() in method_lis else method_lis[0]
-    try:
-        r = getattr(requests, method.lower(), None)(url, headers=headers, **kwargs)
-        if is_logging:
-            logging.info('>> %s \n[%s][URL]: %s' % (msg, method, urlparse.unquote(r.url)))
-
-    except requests.exceptions.ConnectionError as err:
-        logging.error(traceback.format_exc())
-
-        raise ValueError(err)
-    except Exception as err:
-        logging.error(traceback.format_exc())
-
-        raise ValueError(err)
-    logging.info(r)
-    logging.info(r.status_code)
-    # logging.info(r.text)
-    if method == 'POST':
-        r = r.json()
-        logging.info(r)
-
-    return r
 
 
 class BaiduyunAPI(object):
@@ -155,8 +132,7 @@ class BaiduyunAPI(object):
             # TODO logid无法从请求中获取，写死也可以用            
             'logid': 'MTU4NDA5NzUzNzc5ODAuMDIzODg1MzAyMzg4NzYwODU0',
             'bdstoken': 'null',
-
-            # TODO
+            # TODO 无法获取 写死也可以用
             'app_id': '250528',
         }
 
@@ -191,7 +167,7 @@ class BaiduyunAPI(object):
 
         :return:
         """
-        # TODO 实现类的自动监控
+        # TODO 实现类的自动监控 暂未使用
         if not self.total_success:
             raise ValueError(self.total_msg)
 
@@ -200,6 +176,8 @@ class BaiduyunAPI(object):
 
     def _read_data(self, file_name=None):
         u""" 读取文件
+
+        :param str file_name: 文件名称
         """
         logging.info('>>>> 读取文件[%s]' % file_name)
         data = []
@@ -243,7 +221,6 @@ class BaiduyunAPI(object):
             return
 
         data = list()
-        header = ['url', 'code', 'type']
 
         if file_name:
             data = self._read_data(file_name=file_name)
@@ -261,7 +238,14 @@ class BaiduyunAPI(object):
 
         # 非 http 开头的 url 自动去除
         self.data = [dic for dic in data if dic['url'].startswith('http') and dic not in self.success_data]
-        # 去重 TODO
+        # 去重 TODO 更优的写法
+        tmp_data = list()
+        for dic in self.data:
+            if dic not in tmp_data:
+                tmp_data.append(dic)
+        self.data = copy.deepcopy(tmp_data)
+        del tmp_data
+
         self.total_info['file_count'] = len(data)
         self.total_info['valid_count'] = len(self.data)
         return data
@@ -281,6 +265,7 @@ class BaiduyunAPI(object):
     def save(self, save_path='/'):
         u""" 将资源 保存到 百度云盘中
 
+        :param save_path: 百度云盘路径，默认根目录 /
         """
         if not bool(self.data):
             self.one_success = False
@@ -296,7 +281,7 @@ class BaiduyunAPI(object):
 
             try:
                 if url_dic['type'] == 'not_code':
-                    body_data = self._save_getbody()
+                    self._save_getbody()
                     self._save_addziyuan(save_path)
                 elif url_dic['type'] == 'have_code':
                     self.parse_code()
@@ -317,46 +302,6 @@ class BaiduyunAPI(object):
 
         logging.info('总计信息: \n%s' % self.total_info)
 
-    def parse_code123(self, url_dic):
-        u"""
-
-        :param url_dic:
-        :return:
-        """
-
-        pass
-        self.hosts = "https://pan.baidu.com"
-
-        url = "https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA"
-        http_request(url, method='GET', headers=self.headers)
-
-        url = "https://pan.baidu.com/share/init?surl=nKdwucv-HENIVr9CaG5dRA"
-        http_request(url, method='GET', headers=self.headers)
-
-        url = "https://pan.baidu.com/api/report/user?channel=chunlei&web=1&app_id=250528&bdstoken=undefined&logid=MTU4NTY0OTg3MDM3NjAuMTk0ODQ1MDc5OTc1NDM5NTQ=&clienttype=0"
-        post_data = {
-            'timestamp': int(time.time()),  # '1585649870',
-            'action': 'web_home',
-        }
-        http_request(url, method='POST', data=post_data, headers=self.headers)
-
-        url = "https://pan.baidu.com/pcloud/user/getinfo?query_uk=3610179400&third=0&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1Mjg3MzcyMDAuOTE1MTUzNjAxOTQ2ODE3Ng==&clienttype=0"
-        http_request(url, method='GET', headers=self.headers)
-
-        url = "https://pan.baidu.com/share/verify?surl=nKdwucv-HENIVr9CaG5dRA&t=1585650325783&channel=chunlei&web=1&app_id=250528&bdstoken=null&logid=MTU4NTY1MDMyNTc4NTAuMjIxNzQxMjMxODk3MTk1ODY=&clienttype=0"
-        post_data = {
-            # 提取码
-            'pwd': 'y0xy',
-            # 验证码
-            'vcode': '',
-            'vcode_str': '',
-        }
-        http_request(url, method='POST', data=post_data, headers=self.headers)
-
-        url = "https://pan.baidu.com/s/1nKdwucv-HENIVr9CaG5dRA"
-        r = http_request(url, method='GET', headers=self.headers)
-        logging.info(r.text)
-
     def parse_code(self):
         u""" 解析百度 提取码
 
@@ -372,10 +317,6 @@ class BaiduyunAPI(object):
         url = self.url_dic['url']
         code = self.url_dic['code']
 
-        # if 'app_id' not in self.user_params_data.keys():
-        #     logging.info('未成功获取 用户参数数据!')
-        #     return
-
         post_data = copy.deepcopy(self.user_params_data)
 
         if 'surl' in url:
@@ -386,6 +327,7 @@ class BaiduyunAPI(object):
         post_data.update(
             {
                 'surl': surl,
+                # TODO t 写死也可以用？
                 't': '1585238556461',
             }
         )
@@ -397,7 +339,7 @@ class BaiduyunAPI(object):
             payload_data = {
                 # 提取码
                 'pwd': code,
-                # 验证码
+                # 验证码 (部分资源需要验证码 验证码涉及图像识别 暂未实现) TODO
                 'vcode': '',
                 'vcode_str': '',
             }
@@ -408,25 +350,24 @@ class BaiduyunAPI(object):
             req = Request(url=post_url, data=payload, headers=self.headers)
             f = urlopen(req)
             result = json.loads(f.read())
-            
-#            # 获取验证码
-#            infos = req.selector.xpath('//dl[@class="pickcode clearfix"]')
-#            print(infos
-#            for info in infos:
-#                vcodes = info.xpath('dd/img/@src').extract()
-#                print(vcodes)
-#            print(dir(req))
+
+            #            # 获取验证码
+            #            infos = req.selector.xpath('//dl[@class="pickcode clearfix"]')
+            #            print(infos
+            #            for info in infos:
+            #                vcodes = info.xpath('dd/img/@src').extract()
+            #                print(vcodes)
+            #            print(dir(req))
 
             if result["errno"] == 0:
                 # 提取码 验证成功后 更新Cookie
-                code_cookie = self.edit_cookie(self.cookie, {'BDCLND':result['randsk']})
+                code_cookie = self.edit_cookie(self.cookie, {'BDCLND': result['randsk']})
                 self.code_headers.update({'Cookie': code_cookie})
                 self._one_success('提取码验证成功!')
-
             elif result["errno"] == -62:
-                # TODO 需要识别验证码 需要图像识别 此处跳过此次识别 
+                # TODO 需要识别验证码 需要图像识别 此处跳过此次识别
                 # 等待一段时间后无需验证码时再次访问
-                self._one_failed(msg='请输入验证码!')
+                self._one_failed(msg='请输入验证码!,暂不支持验证码识别，跳过此次资源处理！')
             elif result["errno"] == -12:
                 self._one_failed(msg='提取码错误！!')
             else:
@@ -437,21 +378,20 @@ class BaiduyunAPI(object):
             logging.error(traceback.format_exc())
 
     def edit_cookie(self, cookie='', edit_dic={}):
-        u""" 修改 cookie
+        u""" 根据kv 修改cookie部分内容
 
         :param str cookie: Cookie字符串 PSINO=3; BDORZ=Bxxxxx
         :param dict edit_dic: 修改字典 {'PSINO':10}
-        
+
         :returns: Cookie
         """
-        
+
         cookie_dic = collections.OrderedDict({row.split('=')[0]: row.split('=')[1] for row in cookie.split('; ')})
 
         if bool(edit_dic):
-            cookie_dic.update({k:v for k,v in list(edit_dic.items()) if k in list(cookie_dic.keys())})
-            
-        return '; '.join(['%s=%s'%(k,v) for k,v in cookie_dic.items()])
-            
+            cookie_dic.update({k: v for k, v in list(edit_dic.items()) if k in list(cookie_dic.keys())})
+
+        return '; '.join(['%s=%s' % (k, v) for k, v in cookie_dic.items()])
 
     def _check_response_status(self, mode='check_content', content=None, request_result=None, error_infos=[]):
         u""" 检查请求后答复 状态
