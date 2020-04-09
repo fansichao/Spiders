@@ -20,6 +20,14 @@
 - 暂不支持保存自己分享的资源
 - 代码优化
 
+**文件说明:**
+
+- baiduyun_tools.py 自动转存百度云盘资料
+- file 存放自动转存百度云盘 信息
+- proxies_tools.py 自动生成代理文件
+- Spiders 爬取百度网盘搜索引擎资源
+- scrapy_mockplus_template Scrapy爬虫,爬取MockPlus模板(待优化)
+
 ## 项目
 
 - Baiduyun
@@ -108,8 +116,10 @@ scrapy crawl sobaidupan02
    2. 部分资源有提取码时仍需要验证码,暂不支持
 3. 其他说明:
    1. 使用 Linux 测试,Windows 未测试
-   2. 配置目录 `/data/scrapy_data/baiduyun/badidu_result.txt` 存放百度云资料
-   3. `badidu_result.txt` 详见 `file/badidu_result.txt`
+   2. 附件说明
+      1. `file/badidu_result.txt` 存放百度云资料
+      2. `file/success.txt` 存放保存成功的资源
+      3. `file/failed.txt` 存放保存失败的资源
 
 **使用样例:**
 

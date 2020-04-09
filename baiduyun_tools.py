@@ -107,8 +107,8 @@ class BaiduyunAPI(object):
         u""" 初始化 参数等
 
         """
-        self.success_file = success_file or 'success.txt'
-        self.failed_file = failed_file or 'failed.txt'
+        self.success_file = success_file or 'file/success.txt'
+        self.failed_file = failed_file or 'file/failed.txt'
 
         if isinit:
             os.remove(self.success_file)
@@ -518,10 +518,7 @@ class BaiduyunAPI(object):
 COOKIE = os.environ.get('BAIDU_COOKIE', None)
 SAVE_PATH = "/scrapy_data"
 FILENAME = "resource.txt"
-FILENAME = "/data/scrapy_data/baiduyun/result.txt"
-FILENAME = "/data/scrapy_data/baiduyun/tmp.txt"
-FILENAME = "/data/scrapy_data/baiduyun/result_excel.txt"
-FILENAME = "/data/scrapy_data/baiduyun/badidu_result.txt"
+FILENAME = "file/badidu_result.txt"
 
 if __name__ == '__main__':
 
@@ -532,7 +529,7 @@ if __name__ == '__main__':
     parser.add_argument("-cookie", help="add your baidupan-cookie")
 
     args = parser.parse_args()
-    print('>> 输出信息到日志文件[%s]' % LOG_FILE)
+    # print('>> 输出信息到日志文件[%s]' % LOG_FILE)
 
     if args.cookie:
         COOKIE = args.cookie or COOKIE
