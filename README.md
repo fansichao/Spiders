@@ -142,12 +142,6 @@ failed.txt 记录失败的URL
 - [自动将资源添加到百度网盘中](https://github.com/tengzhangchao/BaiDuPan)
 - [Scrapy\_延迟加载](https://zhuanlan.zhihu.com/p/72887277)
 
-### 求赞赏
-
-如果对您有帮助，还请支持我吧！(皮卡 qiu~~)
-
-![支付宝微信_赞赏图片](https://raw.githubusercontent.com/fansichao/images/master/markdown/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%BE%AE%E4%BF%A1_%E8%B5%9E%E8%B5%8F%E5%9B%BE%E7%89%87.png)
-
 ### 免责说明
 
 1. 非商业用途.
