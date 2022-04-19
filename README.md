@@ -116,3 +116,13 @@ scrapy crawl dashengpan02 -a mode=append # 需要在有UI界面的地方执行
 
 1. 非商业用途.
 2. 如有侵犯您的合法权益或违法违规，请提供相关有效书面证明与侵权页面链接联系我们进行删除。感谢您的支持
+
+
+
+## 后续维护说明
+
+GitHub仓库 转入 Gitee仓库 https://gitee.com/fansichao/Spiders
+
+Github仓库后续 不定期维护 !!
+
+
